@@ -1,9 +1,30 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
 
+    <ion-row class="logo">
+        <ion-col size="12" class="ion-align-self-center">
+            <img src="assets/img/logo.jpg" alt="">
+        </ion-col>
+    </ion-row>
+    <ion-row class="form">
+        <ion-col size="12">
+            <ion-item>
+                <ion-label position="floating">Email</ion-label>
+                <ion-input></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label position="floating">Password</ion-label>
+                <ion-input></ion-input>
+            </ion-item>
+        </ion-col>
+        <ion-col size="12">
+            <ion-button expand="full" class="btnLogin">Login</ion-button>
+        </ion-col>
+        <ion-col size="12">
+            <ion-button expand="full" class="btnFb">
+                Login with Facebook
+                <ion-icon name="logo-facebook"></ion-icon>
+            </ion-button>
+        </ion-col>
+    </ion-row>
+    <p>You don't have any account ? Register</p>
 </ion-content>

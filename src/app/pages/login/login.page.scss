@@ -1,0 +1,16 @@
+.logo {
+    height: 40%;
+}
+
+.form {
+    .btnLogin {
+        --background: linear-gradient(to right, #ffab00, #ff8921, #ff653a, #fd404f, #eb1264);
+        --background-hover: linear-gradient(to right, #ffab00, #ff8921, #ff653a, #fd404f, #eb1264);
+        --background-focused: linear-gradient(to right, #ffab00, #ff8921, #ff653a, #fd404f, #eb1264);
+        --background-activated: linear-gradient(to right, #ffab00, #ff8921, #ff653a, #fd404f, #eb1264);
+    }
+}
+
+p {
+    text-align: center;
+}
