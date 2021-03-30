@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Mobile</string>
+    <string name="title_activity_main">Mobile</string>
+    <string name="package_name">fr.imieparis.cda.application</string>
+    <string name="custom_url_scheme">fr.imieparis.cda.application</string>
+</resources>
