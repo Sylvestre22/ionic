@@ -1,0 +1,18 @@
+.logo {
+    ion-col {
+        text-align: center;
+        input {
+            padding: 15% 18%;
+            border-radius: 50%;
+        }
+        ion-icon {
+            color: white;
+            margin-top: 30%;
+            margin-left: -25%;
+            position: absolute;
+            border-radius: 50%;
+            font-size: xxx-large;
+            background: linear-gradient(to right, #ffab00, #ff8921, #ff653a, #fd404f, #eb1264);
+        }
+    }
+}
