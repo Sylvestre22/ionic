@@ -1,0 +1,32 @@
+.logo {
+    height: 40%;
+}
+
+.form {
+    .btnLogin {
+        --background: linear-gradient(to right, #ffab00, #ff8921, #ff653a, #fd404f, #eb1264);
+        --background-hover: linear-gradient(to right, #ffab00, #ff8921, #ff653a, #fd404f, #eb1264);
+        --background-focused: linear-gradient(to right, #ffab00, #ff8921, #ff653a, #fd404f, #eb1264);
+        --background-activated: linear-gradient(to right, #ffab00, #ff8921, #ff653a, #fd404f, #eb1264);
+    }
+    .errorEmail {
+        border-bottom: #ff0062;
+        --border-color: #ff0062;
+        --highlight-background: #ff0062;
+    }
+    .goodEmail {
+        border-bottom: #12eb48;
+        --border-color: #12eb48;
+        --highlight-background: #12eb48;
+    }
+    .forgot {
+        margin-top: 0;
+        text-align: end;
+    }
+}
+
+p,
+a {
+    color: #c9c9c9 !important;
+    text-align: center;
+}

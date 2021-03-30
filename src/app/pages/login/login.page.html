@@ -1,0 +1,33 @@
+<ion-content>
+
+    <ion-row class="logo">
+        <ion-col size="12" class="ion-align-self-center">
+            <img src="assets/img/logo.jpg" alt="">
+        </ion-col>
+    </ion-row>
+    <ion-row class="form">
+        <ion-col size="12">
+            <ion-item [ngClass]="isErrorMail ? 'errorEmail' : 'goodEmail'">
+                <ion-label position="floating">Email</ion-label>
+                <ion-input (keydown)="checkEmail()" type="email" [(ngModel)]="email"></ion-input>
+            </ion-item>
+            <ion-item [ngClass]="pass.trim().length < 5 ? 'errorEmail' : 'goodEmail'">
+                <ion-label position="floating">Password</ion-label>
+                <ion-input type="password" [(ngModel)]="pass"></ion-input>
+            </ion-item>
+        </ion-col>
+        <ion-col size="12">
+            <p class="forgot" (click)="forgotPassword()">Forgot Password ?</p>
+        </ion-col>
+        <ion-col size="12">
+            <ion-button [disabled]="isErrorMail || pass.trim().length < 5" expand="full" class="btnLogin" (click)="loginForm()">Login</ion-button>
+        </ion-col>
+        <ion-col size="12">
+            <ion-button expand="full" class="btnFb">
+                Login with Facebook
+                <ion-icon name="logo-facebook"></ion-icon>
+            </ion-button>
+        </ion-col>
+    </ion-row>
+    <p> <a routerLink="/register">You don't have any account ? Register</a> </p>
+</ion-content>
