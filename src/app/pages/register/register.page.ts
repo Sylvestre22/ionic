@@ -1,15 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 
+import { Router } from '@angular/router';
+import { ToastController } from '@ionic/angular';
+import { LoadingController } from '@ionic/angular';
 import { Camera, CameraOptions } from '@ionic-native/camera/ngx';
 
-interface userRegister {
-    firstname: string;
-    lastname: string;
-    phone: string;
-    email: string;
-    password: string;
-    repassword: string;
-}
+import { AuthService } from '../../services/auth.service';
+import { UserRegister } from '../../interfaces/user-register';
+
 
 @Component({
     selector: 'app-register',
@@ -20,9 +18,15 @@ export class RegisterPage implements OnInit {
 
     isErrorMail: boolean = true;
     isErrorPhone: boolean = true;
-    user: userRegister = { firstname: '', lastname: '', email: '', phone: '', password: '', repassword: '' };
+    user: UserRegister = { avatar: '', first_name: '', last_name: '', email: '', phone: '', password: '', confirm_password: '' };
 
-    constructor(private camera: Camera) {}
+    constructor(
+        private router: Router,
+        private camera: Camera,
+        private auth: AuthService,
+        private toast: ToastController,
+        private loading: LoadingController
+    ) {}
 
     ngOnInit() {}
 
@@ -34,6 +38,27 @@ export class RegisterPage implements OnInit {
     checkPhone() {
         const regex = new RegExp(/^((\+)33|0|0033)[1-9](\d{2}){4}$/g);
         this.isErrorPhone = (regex.test(this.user.phone.trim())) ? false : true;
+    }
+
+    async register() {
+        const load = await this.loading.create({
+            message: 'Please wait...',
+        });
+        await load.present();
+        this.user.username = this.user.email.split('@')[0];
+        this.auth.register(this.user).then(async(data) => {
+            console.log(data);
+            await this.loading.dismiss();
+            this.router.navigate(['/login']);
+        }).catch(async(err) => {
+            console.log(err);
+            const toast = await this.toast.create({
+                message: err,
+                duration: 2000
+            });
+            toast.present();
+            await this.loading.dismiss();
+        })
     }
 
     uploadPicture() {

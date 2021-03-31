@@ -8,13 +8,13 @@
     </ion-row>
     <ion-row class="form">
         <ion-col size="12">
-            <ion-item [ngClass]="user.firstname.trim().length < 2 ? 'errorEmail' : 'goodEmail'">
-                <ion-label position="floating">Firstname</ion-label>
-                <ion-input type="text" [(ngModel)]="user.firstname"></ion-input>
+            <ion-item [ngClass]="user.first_name.trim().length < 2 ? 'errorEmail' : 'goodEmail'">
+                <ion-label position="floating">firstname</ion-label>
+                <ion-input type="text" [(ngModel)]="user.first_name"></ion-input>
             </ion-item>
-            <ion-item [ngClass]="user.lastname.trim().length < 2 ? 'errorEmail' : 'goodEmail'">
-                <ion-label position="floating">Lastname</ion-label>
-                <ion-input type="text" [(ngModel)]="user.lastname"></ion-input>
+            <ion-item [ngClass]="user.last_name.trim().length < 2 ? 'errorEmail' : 'goodEmail'">
+                <ion-label position="floating">lastname</ion-label>
+                <ion-input type="text" [(ngModel)]="user.last_name"></ion-input>
             </ion-item>
             <ion-item [ngClass]="isErrorMail ? 'errorEmail' : 'goodEmail'">
                 <ion-label position="floating">Email</ion-label>
@@ -28,13 +28,13 @@
                 <ion-label position="floating">Password</ion-label>
                 <ion-input type="password" [(ngModel)]="user.password"></ion-input>
             </ion-item>
-            <ion-item [ngClass]="user.password.trim() != user.repassword.trim() || user.repassword.trim().length < 2 ? 'errorEmail' : 'goodEmail'">
+            <ion-item [ngClass]="user.password.trim() != user.confirm_password.trim() || user.confirm_password.trim().length < 2 ? 'errorEmail' : 'goodEmail'">
                 <ion-label position="floating">Re-Password</ion-label>
-                <ion-input type="password" [(ngModel)]="user.repassword"></ion-input>
+                <ion-input type="password" [(ngModel)]="user.confirm_password"></ion-input>
             </ion-item>
         </ion-col>
         <ion-col size="12">
-            <ion-button [disabled]="isErrorMail || isErrorPhone" expand="full" class="btnLogin">Register</ion-button>
+            <ion-button [disabled]="isErrorMail || isErrorPhone || (user.password.trim() != user.confirm_password.trim() && user.confirm_password.trim().length < 2 )" (click)="register()" expand="full" class="btnLogin">Register</ion-button>
         </ion-col>
     </ion-row>
     <p> <a routerLink="/login">You already have an account ? Login</a> </p>
