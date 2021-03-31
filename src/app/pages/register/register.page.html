@@ -8,33 +8,33 @@
     </ion-row>
     <ion-row class="form">
         <ion-col size="12">
-            <ion-item [ngClass]="true ? 'errorEmail' : 'goodEmail'">
+            <ion-item [ngClass]="user.firstname.trim().length < 2 ? 'errorEmail' : 'goodEmail'">
                 <ion-label position="floating">Firstname</ion-label>
                 <ion-input type="text" [(ngModel)]="user.firstname"></ion-input>
             </ion-item>
-            <ion-item [ngClass]="true ? 'errorEmail' : 'goodEmail'">
+            <ion-item [ngClass]="user.lastname.trim().length < 2 ? 'errorEmail' : 'goodEmail'">
                 <ion-label position="floating">Lastname</ion-label>
                 <ion-input type="text" [(ngModel)]="user.lastname"></ion-input>
             </ion-item>
-            <ion-item [ngClass]="true ? 'errorEmail' : 'goodEmail'">
+            <ion-item [ngClass]="isErrorMail ? 'errorEmail' : 'goodEmail'">
                 <ion-label position="floating">Email</ion-label>
-                <ion-input type="email" [(ngModel)]="user.email"></ion-input>
+                <ion-input (keydown)="checkEmail()" type="email" [(ngModel)]="user.email"></ion-input>
             </ion-item>
-            <ion-item [ngClass]="true ? 'errorEmail' : 'goodEmail'">
+            <ion-item [ngClass]="isErrorPhone ? 'errorEmail' : 'goodEmail'">
                 <ion-label position="floating">Phone number</ion-label>
-                <ion-input type="tel" [(ngModel)]="user.phone"></ion-input>
+                <ion-input (keyup)="checkPhone()" type="tel" [(ngModel)]="user.phone"></ion-input>
             </ion-item>
-            <ion-item>
+            <ion-item [ngClass]="user.password.trim().length < 5 ? 'errorEmail' : 'goodEmail'">
                 <ion-label position="floating">Password</ion-label>
                 <ion-input type="password" [(ngModel)]="user.password"></ion-input>
             </ion-item>
-            <ion-item>
+            <ion-item [ngClass]="user.password.trim() != user.repassword.trim() || user.repassword.trim().length < 2 ? 'errorEmail' : 'goodEmail'">
                 <ion-label position="floating">Re-Password</ion-label>
                 <ion-input type="password" [(ngModel)]="user.repassword"></ion-input>
             </ion-item>
         </ion-col>
         <ion-col size="12">
-            <ion-button expand="full" class="btnLogin">Register</ion-button>
+            <ion-button [disabled]="isErrorMail || isErrorPhone" expand="full" class="btnLogin">Register</ion-button>
         </ion-col>
     </ion-row>
     <p> <a routerLink="/login">You already have an account ? Login</a> </p>

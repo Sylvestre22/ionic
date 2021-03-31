@@ -18,11 +18,23 @@ interface userRegister {
 })
 export class RegisterPage implements OnInit {
 
+    isErrorMail: boolean = true;
+    isErrorPhone: boolean = true;
     user: userRegister = { firstname: '', lastname: '', email: '', phone: '', password: '', repassword: '' };
 
     constructor(private camera: Camera) {}
 
     ngOnInit() {}
+
+    checkEmail() {
+        const regex = new RegExp(/[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g);
+        this.isErrorMail = (regex.test(this.user.email.trim())) ? false : true;
+    }
+
+    checkPhone() {
+        const regex = new RegExp(/^((\+)33|0|0033)[1-9](\d{2}){4}$/g);
+        this.isErrorPhone = (regex.test(this.user.phone.trim())) ? false : true;
+    }
 
     uploadPicture() {
         const options: CameraOptions = {
