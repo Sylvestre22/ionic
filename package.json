@@ -29,6 +29,7 @@
     "cordova-plugin-nativestorage": "^2.3.2",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
+    "xml-js": "^1.6.11",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {

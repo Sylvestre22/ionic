@@ -1,0 +1,263 @@
+{
+    "articles": [{
+            "source": {
+                "id": null,
+                "name": "Lifehacker.com"
+            },
+            "author": "Brendan Hesse",
+            "title": "Install These iOS, iPadOS, and WatchOS Security Updates Immediately",
+            "description": "Apple released patches for iPhone, iPad, and Apple Watch over the weekend that all users should install immediately. The patches fixes a dangerous zero-day vulnerability that hackers are actively exploiting.Read more...",
+            "url": "https://lifehacker.com/install-these-ios-ipados-and-watchos-security-updates-1846577625",
+            "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/xu0l8mbiwatnvegu2fd4.jpg",
+            "publishedAt": "2021-03-30T15:30:00Z",
+            "content": "Apple released patches for iPhone, iPad, and Apple Watch over the weekend that all users should install immediately. The patches fixes a dangerous zero-day vulnerability that hackers are actively exp… [+1793 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Lifehacker.com"
+            },
+            "author": "Aisha Jordan",
+            "title": "24 Action-Adventure Movies With Ass-Kicking Women",
+            "description": "Growing up, my favorite movies were Indiana Jones, The Lord of the Rings, James Bond—anything with action and adventure. They typically starred daring men, but as a young woman I started admire more powerful, smart women who could command a room. Fast forward…",
+            "url": "https://lifehacker.com/24-action-adventure-movies-with-ass-kicking-women-1846574565",
+            "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/f1sy0dbofng1lbz3hq4u.png",
+            "publishedAt": "2021-03-30T21:15:00Z",
+            "content": "Enduringly popular video game star Lara Croft has graced the silver screen on multiple occasions, each time drawing a respected actress to the role. The first version, released in 2001, starred Angel… [+929 chars]"
+        },
+        {
+            "source": {
+                "id": "engadget",
+                "name": "Engadget"
+            },
+            "author": "https://www.engadget.com/about/editors/chris-velazco",
+            "title": "Apple is keeping WWDC free and online-only for 2021",
+            "description": "For the second year in a row, Apple's Worldwide Developer Conference will be completely virtual. The company announced today that the online show will take place between June 7th and 11th — just like last year — and that it will once again be free to all regi…",
+            "url": "https://www.engadget.com/apple-wwdc-2021-developer-conference-online-only-free-140920542.html",
+            "urlToImage": "https://s.yimg.com/os/creatr-uploaded-images/2021-03/69f25500-915c-11eb-bd7e-e103dbc7fb45",
+            "publishedAt": "2021-03-30T14:09:20Z",
+            "content": "For the second year in a row, Apple's Worldwide Developer Conference will be completely virtual. The company announced today that the online show will take place between June 7th and 11th just like l… [+2206 chars]"
+        },
+        {
+            "source": {
+                "id": "engadget",
+                "name": "Engadget"
+            },
+            "author": "https://www.engadget.com/about/editors/richard-lawler",
+            "title": "Apple's repair store verification program is rolling out worldwide",
+            "description": "Apple's Independent Repair Provider program provides genuine parts for out-of-warranty repairs, and now third-party shops around the world can join.",
+            "url": "https://www.engadget.com/apple-independent-repair-012643494.html",
+            "urlToImage": "https://s.yimg.com/os/creatr-uploaded-images/2021-03/db31f150-90f6-11eb-bffb-a4566bec970c",
+            "publishedAt": "2021-03-30T01:26:43Z",
+            "content": "When Apple announced its Independent Repair Provider Program for the US in 2019, the company said it had plans to expand to other countries, today it announced the certification setup will grow even … [+1322 chars]"
+        },
+        {
+            "source": {
+                "id": "engadget",
+                "name": "Engadget"
+            },
+            "author": "https://www.engadget.com/about/editors/richard-lawler",
+            "title": "What's on TV this week: 'Godzilla vs. Kong'",
+            "description": "On Wednesday HBO Max will start streaming its latest monsterverse movie, 'Godzilla vs. Kong.'",
+            "url": "https://www.engadget.com/godzilla-vs-kong-disco-elyisum-074402187.html",
+            "urlToImage": "https://s.yimg.com/os/creatr-uploaded-images/2021-03/a1afd4b0-9123-11eb-bbbf-62601cd33ead",
+            "publishedAt": "2021-03-30T07:25:02Z",
+            "content": "This week HBO Max keeps up the pressure with another massive movie release, as Godzilla vs. Kong brings a blockbuster home via streaming at the same time it debuts in theaters. The streamer/premium c… [+4478 chars]"
+        },
+        {
+            "source": {
+                "id": "the-verge",
+                "name": "The Verge"
+            },
+            "author": "Mitchell Clark",
+            "title": "Snapchat’s Spectacles might become true AR glasses this time — and there’s a drone",
+            "description": "Snap, the company behind Snapchat, is reportedly looking to create a new generation of its Spectacles glasses, aimed primarily at creators and developers. The device is rumored to have displays for AR, unlike previous generations.",
+            "url": "https://www.theverge.com/2021/3/30/22359117/snap-inc-snapchat-spectacles-4-drone-developers-creators",
+            "urlToImage": "https://cdn.vox-cdn.com/thumbor/0S7SkKKUpm85WJhmSMDhqsX7QLo=/0x0:1920x1005/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/7159491/Specs4.0.png",
+            "publishedAt": "2021-03-30T23:53:03Z",
+            "content": "Also, there could be a drone?\r\nThe first generation Snap Spectacles.\r\nSnap, the company behind Snapchat, is planning to continue its push into hardware devices with a new pair of augmented-reality gl… [+2440 chars]"
+        },
+        {
+            "source": {
+                "id": "techcrunch",
+                "name": "TechCrunch"
+            },
+            "author": "Alex Wilhelm",
+            "title": "Spotify is getting into live audio because of course it is",
+            "description": "Shares of Spotify are up a fraction this morning after the company announced that it will acquire Betty Labs, the company behind the Locker Room, which focuses on live audio. Prior to the deal, Betty Labs had raised more than $9 million, per Crunchbase data. …",
+            "url": "http://techcrunch.com/2021/03/30/spotify-is-getting-into-live-audio-because-of-course-it-is/",
+            "urlToImage": "https://techcrunch.com/wp-content/uploads/2021/02/Spotify-logo.jpg?w=711",
+            "publishedAt": "2021-03-30T13:27:22Z",
+            "content": "Shares of Spotify are up a fraction this morning after the company announced that it will acquire Betty Labs, the company behind the Locker Room, which focuses on live audio. Prior to the deal, Betty… [+2293 chars]"
+        },
+        {
+            "source": {
+                "id": "techcrunch",
+                "name": "TechCrunch"
+            },
+            "author": "Anthony Ha",
+            "title": "Acast expands its support for paid podcasts with Acast+",
+            "description": "After partnering with Patreon last year to support patron-only podcasts, Acast has developed a full suite of subscription tools called Acast+. The company has experimented with paywalled podcasts beyond Patreon in the past, but Acast+ appears to be its most c…",
+            "url": "http://techcrunch.com/2021/03/30/acast-expands-its-support-for-paid-podcasts-with-acast/",
+            "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/08/GettyImages-1174561644.jpg?w=600",
+            "publishedAt": "2021-03-30T10:00:40Z",
+            "content": "After partnering with Patreon last year to support patron-only podcasts, Acast has developed a full suite of subscription tools called Acast+.\r\nThe company has experimented with paywalled podcasts be… [+2485 chars]"
+        },
+        {
+            "source": {
+                "id": "mashable",
+                "name": "Mashable"
+            },
+            "author": "Ryan Lakich",
+            "title": "The MacBook Air with the powerful M1 chip is back at its best price of $949",
+            "description": "Save $49.01: The Apple 13-inch MacBook Air with M1 chip, 8GB RAM, and 256GB SSD storage is $949.99 at Amazon as of March 30. \n\nThere are plenty of cheap laptop options out there if you require a quick upgrade. But you can't put a price on reliability and perf…",
+            "url": "https://mashable.com/shopping/march-30-apple-macbook-air-m1/",
+            "urlToImage": "https://mondrian.mashable.com/2021%252F03%252F30%252F01%252F1f7989e383d04e4a8989d4309f07146f.05250.png%252F1200x630.png?signature=MJezm1kxhulAPMWb_N8rqw_wgGI=",
+            "publishedAt": "2021-03-30T17:04:47Z",
+            "content": "Save $49.01: The Apple 13-inch MacBook Air with M1 chip, 8GB RAM, and 256GB SSD storage is $949.99 at Amazon as of March 30. \r\nThere are plenty of cheap laptop options out there if you require a quic… [+1523 chars]"
+        },
+        {
+            "source": {
+                "id": "mashable",
+                "name": "Mashable"
+            },
+            "author": "Brenda Stolyar",
+            "title": "Deepak Chopra on building a daily meditation habit: 'Make your body smile'",
+            "description": "March Mindfulness\r\n is Mashable's series that examines the intersection of meditation practice and technology. Because even in the time of coronavirus, March doesn't have to be madness.\n\nWhen I first started meditating last year, I was on a roll. I managed to…",
+            "url": "https://mashable.com/article/deepak-chopra-meditation-habits-interview/",
+            "urlToImage": "https://mondrian.mashable.com/2021%252F03%252F30%252F42%252F2f9b3e46254749c8901c5b0104a6d855.c3f71.png%252F1200x630.png?signature=TwU5rfvebHEl80RN8cCZuIckk-A=",
+            "publishedAt": "2021-03-30T21:43:14Z",
+            "content": "March Mindfulness\r\nis Mashable's series that examines the intersection of meditation practice and technology. Because even in the time of coronavirus, March doesn't have to be madness.\r\nWhen I first … [+5061 chars]"
+        },
+        {
+            "source": {
+                "id": "mashable",
+                "name": "Mashable"
+            },
+            "author": "Lindsay Robertson",
+            "title": "Shopify vs. Squarespace: Which ecommerce platform is best for your online shop?",
+            "description": "If you're a business owner, you know that you need a really great ecommerce site that can reel in customers with its good looks and superb functionality. But with countless options for really fantastic website builders\r\n out there, how could you ever choose t…",
+            "url": "https://mashable.com/shopping/shopify-vs-squarespace/",
+            "urlToImage": "https://mondrian.mashable.com/2021%252F03%252F30%252F63%252F286d5654a62248ee947e1ad0ba0c25de.973cc.jpg%252F1200x630.jpg?signature=Vlr9K7TUZ_IpR6KJhJlSsiM0Oao=",
+            "publishedAt": "2021-03-30T09:07:00Z",
+            "content": "If you're a business owner, you know that you need a really great ecommerce site that can reel in customers with its good looks and superb functionality. But with countless options for really fantast… [+16402 chars]"
+        },
+        {
+            "source": {
+                "id": "mashable",
+                "name": "Mashable"
+            },
+            "author": "Brenda Stolyar",
+            "title": "Google's new Nest Hub tracks your sleep and it feels very judgy",
+            "description": "I've always had a difficult relationship with sleep. It's something my parents quickly came to terms with when I was a toddler: Instead of drifting off into dreamland, I'd climb out of my crib in the middle of the night ready to party like it was my birthday.…",
+            "url": "https://mashable.com/review/google-nest-hub-sleep-tracking-review/",
+            "urlToImage": "https://mondrian.mashable.com/2021%252F03%252F30%252F74%252Fce40edb5368146839e670fb959b1d156.a9934.jpg%252F1200x630.jpg?signature=BZdDP6cz6UFIEVLUkXgcM3bSD4I=",
+            "publishedAt": "2021-03-30T13:00:00Z",
+            "content": "I've always had a difficult relationship with sleep. It's something my parents quickly came to terms with when I was a toddler: Instead of drifting off into dreamland, I'd climb out of my crib in the… [+14680 chars]"
+        },
+        {
+            "source": {
+                "id": "ars-technica",
+                "name": "Ars Technica"
+            },
+            "author": "Ars Staff",
+            "title": "PSA: If you wanted to buy Super Mario 3D All-Stars, now’s the time to do it",
+            "description": "Dealmaster also has deals on Amazon tablets, Apple Macs, and Dell monitors.",
+            "url": "https://arstechnica.com/staff/2021/03/psa-if-you-wanted-to-buy-super-mario-3d-all-stars-nows-the-time-to-do-it/",
+            "urlToImage": "https://cdn.arstechnica.net/wp-content/uploads/2021/03/dealmaster033021-760x380.jpg",
+            "publishedAt": "2021-03-30T19:55:37Z",
+            "content": "0 with 0 posters participating\r\nToday's Dealmaster is headlined by more of a PSA than an outright deal: if you're a Nintendo Switch owner who has been on the fence about buying Super Mario 3D All-Sta… [+7510 chars]"
+        },
+        {
+            "source": {
+                "id": "ars-technica",
+                "name": "Ars Technica"
+            },
+            "author": "Ron Amadeo",
+            "title": "Google Maps gets AR indoor navigation, new eco-friendly route options",
+            "description": "Google details a ton of new features coming to Google Maps.",
+            "url": "https://arstechnica.com/gadgets/2021/03/google-maps-gets-ar-indoor-navigation-new-eco-friendly-route-options/",
+            "urlToImage": "https://cdn.arstechnica.net/wp-content/uploads/2020/08/Google-Maps-760x380.jpg",
+            "publishedAt": "2021-03-30T17:59:30Z",
+            "content": "3 with 3 posters participating\r\n<ul><li>\r\n Google Maps has a new route-selection screen, and you can set preferred modes of transportation. \r\n</li><li>\r\n You'll see eco-friendly routes soon, and Goog… [+6814 chars]"
+        },
+        {
+            "source": {
+                "id": "reuters",
+                "name": "Reuters"
+            },
+            "author": "Akhona Matshoba",
+            "title": "Apple launches its contactless payment service in South Africa - Reuters",
+            "description": "Apple Inc. introduced its contactless payment service in South Africa on Tuesday, as the global tech giant looks to cash in on the mobile payments boom in the country.",
+            "url": "https://www.reuters.com/article/us-safrica-apple-pay-idUSKBN2BM2F6",
+            "urlToImage": "https://static.reuters.com/resources/r/?m=02&d=20210330&t=2&i=1556768384&r=LYNXMPEH2T16W&w=800",
+            "publishedAt": "2021-03-30T16:06:00Z",
+            "content": "FILE PHOTO: The Apple Inc logo is seen hanging at the entrance to the Apple store on 5th Avenue in Manhattan, New York, U.S., October 16, 2019. REUTERS/Mike Segar/File Photo\r\nJOHANNESBURG (Reuters) -… [+674 chars]"
+        },
+        {
+            "source": {
+                "id": "reuters",
+                "name": "Reuters"
+            },
+            "author": "Akhona Matshoba",
+            "title": "Apple launches its contactless payment service in S.Africa - Reuters",
+            "description": "Apple Inc. introduced its contactless payment service in South Africa on Tuesday, as the global tech giant looks to cash in on the mobile payments boom in the country.",
+            "url": "https://www.reuters.com/article/uk-safrica-apple-pay-idUSKBN2BM2XU",
+            "urlToImage": "https://static.reuters.com/resources/r/?m=02&d=20210330&t=2&i=1556790292&r=LYNXMPEH2T1GN&w=800",
+            "publishedAt": "2021-03-30T19:31:00Z",
+            "content": "The Apple logo is seen at an Apple Store in Brooklyn, New York, U.S. October 23, 2020. REUTERS/Brendan McDermid/File Photo\r\nJOHANNESBURG (Reuters) - Apple Inc. introduced its contactless payment serv… [+623 chars]"
+        },
+        {
+            "source": {
+                "id": "reuters",
+                "name": "Reuters"
+            },
+            "author": "Reuters Staff",
+            "title": "Apple supplier Foxconn fourth quarter profit misses estimates - Reuters",
+            "description": "Taiwan's Foxconn, the world's largest contract electronics maker which counts technology giants such as Apple Inc among its major clients, reported a fourth quarter profit on Tuesday that lagged market estimates.",
+            "url": "https://www.reuters.com/article/us-foxconn-results-idUSKBN2BM0FY",
+            "urlToImage": "https://static.reuters.com/resources/r/?m=02&d=20210330&t=2&i=1556700195&r=LYNXMPEH2T078&w=800",
+            "publishedAt": "2021-03-30T05:59:00Z",
+            "content": "By Reuters Staff\r\nFILE PHOTO: People wear masks to protect themselves from the coronavirus disease (COVID-19) while listening to the annual general meeting at the lobby of Foxconn's office in Taipei,… [+482 chars]"
+        },
+        {
+            "source": {
+                "id": "reuters",
+                "name": "Reuters"
+            },
+            "author": "Reuters Staff",
+            "title": "Epic Games files complaint against Apple with UK regulator - Reuters Canada",
+            "description": "Epic Games said on Tuesday it had filed a complaint with Britain's competition regulator in support of its investigation into Apple Inc's anticompetitive behavior.",
+            "url": "https://www.reuters.com/article/us-apple-epic-games-idUSKBN2BM19O",
+            "urlToImage": "https://static.reuters.com/resources/r/?m=02&d=20210330&t=2&i=1556730568&r=LYNXMPEH2T0K7&w=800",
+            "publishedAt": "2021-03-30T10:46:00Z",
+            "content": "By Reuters Staff\r\nFILE PHOTO: 3D printed Lady Justice figure is seen in front of displayed Apple and Epic Games logos in this illustration photo taken February 17, 2021. REUTERS/Dado Ruvic/Illustrati… [+414 chars]"
+        },
+        {
+            "source": {
+                "id": "reuters",
+                "name": "Reuters"
+            },
+            "author": "Reuters Staff",
+            "title": "Apple to host developers event online again as COVID-19 cases surge - Reuters",
+            "description": "Apple Inc said on Tuesday it would host its annual developers' conference in an online-only format for the second year in a row, from June 7 to June 11, as COVID-19 cases rise in the United States.",
+            "url": "https://www.reuters.com/article/us-apple-worldwide-developers-conference-idUSKBN2BM1WR",
+            "urlToImage": "https://static.reuters.com/resources/r/?m=02&d=20210330&t=2&i=1556752029&r=LYNXMPEH2T0XA&w=800",
+            "publishedAt": "2021-03-30T13:39:00Z",
+            "content": "By Reuters Staff\r\nFILE PHOTO: The Apple Inc logo is seen hanging at the entrance to the Apple store on 5th Avenue in Manhattan, New York, U.S., October 16, 2019. REUTERS/Mike Segar/File Photo\r\n(Reute… [+746 chars]"
+        },
+        {
+            "source": {
+                "id": "reuters",
+                "name": "Reuters"
+            },
+            "author": "Reuters Staff",
+            "title": "Google, U.S. government tangle over pre-trial document production - Reuters",
+            "description": "Lawyers for Alphabet's Google and the government tangled on Tuesday over how many documents related to the Justice Department's antitrust lawsuit against the search and advertising giant should be turned over, and how fast.",
+            "url": "https://www.reuters.com/article/us-tech-antitrust-google-idUSKBN2BM2TW",
+            "urlToImage": "https://static.reuters.com/resources/r/?m=02&d=20210330&t=2&i=1556785445&r=LYNXMPEH2T1EC&w=800",
+            "publishedAt": "2021-03-30T18:31:00Z",
+            "content": "By Reuters Staff\r\nFILE PHOTO: The Google sign is shown on one of the company's office buildings in Irvine, California, U.S., October 20, 2020. REUTERS/Mike Blake/File Photo\r\nWASHINGTON (Reuters) - La… [+1694 chars]"
+        }
+    ]
+}
