@@ -1,0 +1,13 @@
+{
+  "appId": "fr.imie-paris.cda.application",
+  "appName": "Mobile",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
+}
