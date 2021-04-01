@@ -39,7 +39,7 @@ export class LoginPage implements OnInit {
         }
         console.log(token);
         if (token !== undefined && token !== null)
-            this.router.navigate(['/home'])
+            this.router.navigate(['/tabs'])
     }
 
     async forgotPassword() {
@@ -73,7 +73,7 @@ export class LoginPage implements OnInit {
                 await this.storage.setItem('user', JSON.stringify(user.user))
             }
             await this.loading.dismiss();
-            this.router.navigate(['/home'])
+            this.router.navigate(['/tabs'])
         }).catch(async() => {
             this.email = ''
             this.pass = ''

@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+
+import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
+
 import { FeedsService } from '../../services/feeds.service';
 import { ArticleFeed } from '../../interfaces/article-feed';
 
@@ -20,7 +23,18 @@ export class HomePage implements OnInit {
         "http://www.slate.fr/sites/default/files/styles/1200x680/public/parker_0.jpg"
     ]
 
-        constructor(private feed: FeedsService) {}
+        constructor(private router: Router, private route: ActivatedRoute, private feed: FeedsService) {}
+
+        ionViewWillEnter() {
+        console.log("ionViewWillEnter");
+
+        this.router.events.subscribe(async(event) => {
+            if (event instanceof NavigationEnd) {
+                this.feeds = (this.route.snapshot.data.json) ? await this.feed.getDataBJson() : await this.feed.requestByUrlTrashTalk()
+            }
+        });
+
+    }
 
         async ngOnInit() {
         this.feeds = await this.feed.requestByUrlTrashTalk()

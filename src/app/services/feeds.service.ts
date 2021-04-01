@@ -17,10 +17,26 @@ export class FeedsService {
 
     constructor(private http: HttpClient) {}
 
-    getDataByUrl() {
+    getDataBJson(): Promise < ArticleFeed[] > {
         return new Promise((resolve, rejects) => {
-            // for (let i = 0; i < this.url.length; i++)
-
+            this.http.request('GET', '/assets/data/Articles.json').subscribe((items: any) => {
+                items = items.articles;
+                console.log(items);
+                let articles: ArticleFeed[] = []
+                for (const item of items) {
+                    articles.push({
+                        category: item.source.name,
+                        title: item.title,
+                        subTitle: '',
+                        pubDate: item.publishedAt,
+                        description: item.description,
+                        creator: item.author,
+                        media: item.urlToImage
+                    })
+                }
+                console.log(articles);
+                resolve(articles);
+            })
         })
     }
 
