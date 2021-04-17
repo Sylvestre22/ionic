@@ -1,7 +1,21 @@
+ion-header{
+  background-color: #f39531;
 .logo {
     height: 40%;
 }
+.titre{
+  h3{
+    color: white;
+    text-align: center;
+  }
+  p{
+    color: white;
+  }
 
+
+}
+
+}
 .form {
     .btnLogin {
         --background: linear-gradient(to right, #ffab00, #ff8921, #ff653a, #fd404f, #eb1264);
