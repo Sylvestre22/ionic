@@ -3,7 +3,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [{
         path: '',
-        redirectTo: 'login',
+        redirectTo: 'tabs',
         pathMatch: 'full'
     },
     {
@@ -34,7 +34,11 @@ const routes: Routes = [{
   {
     path: 'tabs',
     loadChildren: () => import('./pages/tabs/tabs.module').then( m => m.TabsPageModule)
+  },  {
+    path: 'videos',
+    loadChildren: () => import('./pages/videos/videos.module').then( m => m.VideosPageModule)
   },
+
 ];
 
 @NgModule({

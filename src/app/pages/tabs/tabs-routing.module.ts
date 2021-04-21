@@ -15,7 +15,7 @@ const routes: Routes = [{
             }],
             data: { json: false },
         }, {
-            path: 'homeJson',
+            path: 'cuisine',
             children: [{
                 path: '',
                 data: { json: true },
@@ -23,6 +23,15 @@ const routes: Routes = [{
             }],
             data: { json: true },
         },
+      {
+        path: 'video',
+        children: [{
+          path: '',
+          data: { json: true },
+          loadChildren: '../home/home.module#cuisine'
+        }],
+        data: { json: true },
+      },
         {
             path: '',
             redirectTo: '/tabs/home',

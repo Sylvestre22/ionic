@@ -4,16 +4,22 @@ ion-header{
     height: 40%;
 }
 .titre{
+  padding-bottom: 20%;
+
   h3{
+    margin: 0 auto;
     color: white;
     text-align: center;
   }
   p{
-    color: white;
+    margin: 0 auto;
+    font-size: 10px;
+    color: white !important;
   }
-
-
 }
+  .register{
+    color:black;
+  }
 
 }
 .form {
