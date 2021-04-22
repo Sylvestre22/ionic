@@ -32,13 +32,14 @@ const routes: Routes = [{
             import ('./pages/search/search.module').then(m => m.SearchPageModule)
     },
   {
+    path: 'videos',
+    loadChildren: () =>
+      import ('./pages/Videos/videos.module').then(m => m.VideosPageModule)
+  },
+  {
     path: 'tabs',
     loadChildren: () => import('./pages/tabs/tabs.module').then( m => m.TabsPageModule)
-  },  {
-    path: 'videos',
-    loadChildren: () => import('./pages/videos/videos.module').then( m => m.VideosPageModule)
   },
-
 ];
 
 @NgModule({

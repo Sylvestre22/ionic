@@ -15,7 +15,7 @@ const routes: Routes = [{
             }],
             data: { json: false },
         }, {
-            path: 'cuisine',
+            path: 'homeJson',
             children: [{
                 path: '',
                 data: { json: true },
@@ -24,11 +24,20 @@ const routes: Routes = [{
             data: { json: true },
         },
       {
-        path: 'video',
+        path: 'search',
         children: [{
           path: '',
           data: { json: true },
-          loadChildren: '../home/home.module#cuisine'
+          loadChildren: '../home/search.module#SearchPageModule'
+        }],
+        data: { json: true },
+      },
+      {
+        path: 'profil',
+        children: [{
+          path: '',
+          data: { json: true },
+          loadChildren: '../home/home.profil#ProfilPageModule'
         }],
         data: { json: true },
       },

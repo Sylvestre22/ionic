@@ -11,7 +11,8 @@ import { ArticleFeed } from '../interfaces/article-feed';
 export class FeedsService {
 
     url: string[] = [
-        'https://trashtalk.co/feed/',
+      'https://cooking-ez.com/rss-news.xml'
+        //'https://mycookbook-io1.p.rapidapi.com/recipes/rapidapi/?apikey=58e02160a0msh27d712f99292383p1a2648jsnd30330a5b332'
         // 'https://www.lemonde.fr/basket/rss_full.xml'
     ]
 
