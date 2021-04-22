@@ -11,8 +11,8 @@ import { ArticleFeed } from '../interfaces/article-feed';
 export class FeedsService {
 
     url: string[] = [
-      'https://cooking-ez.com/rss-news.xml'
-        //'https://mycookbook-io1.p.rapidapi.com/recipes/rapidapi/?apikey=58e02160a0msh27d712f99292383p1a2648jsnd30330a5b332'
+    //  'spendwithpennies.com/feed',
+        // 'https://trashtalk.co/feed/',
         // 'https://www.lemonde.fr/basket/rss_full.xml'
     ]
 
@@ -20,7 +20,7 @@ export class FeedsService {
 
     getDataBJson(): Promise < ArticleFeed[] > {
         return new Promise((resolve, rejects) => {
-            this.http.request('GET', '/assets/data/Articles.json').subscribe((items: any) => {
+            this.http.request('POST', 'https://mycookbook-io1.p.rapidapi.com/recipes/rapidapi/x-rapidapi-key=58e02160a0msh27d712f99292383p1a2648jsnd30330a5b332').subscribe((items: any) => {
                 items = items.articles;
                 console.log(items);
                 let articles: ArticleFeed[] = []
@@ -43,11 +43,12 @@ export class FeedsService {
 
     requestByUrlTrashTalk(): Promise < ArticleFeed[] > {
         return new Promise((resolve, rejects) => {
-            this.http.request('GET', 'https://trashtalk.co/feed/', { responseType: 'text' }).subscribe((data) => {
+            this.http.request('GET', 'https://mycookbook-io1.p.rapidapi.com/recipes/rapidapi/x-rapidapi-key=58e02160a0msh27d712f99292383p1a2648jsnd30330a5b332', { responseType: 'text' }).subscribe((data) => {
                 try {
                     let articles: ArticleFeed[] = []
                     const object = JSON.parse(converter.xml2json(data, { compact: true, spaces: 2 }))
-                    const items = object.rss.channel.item
+                    const items = object.rss.channel.item;
+                  console.log(items);
                     items.map((article) => {
                         let test = article.category.map((categ) => {
                             categ = categ._cdata
@@ -57,7 +58,9 @@ export class FeedsService {
                         return article
                     })
                     for (const item of items) {
-                        articles.push({
+                      console.log(items);
+
+                      articles.push({
                             category: item.category,
                             title: item.title._text,
                             subTitle: '',
