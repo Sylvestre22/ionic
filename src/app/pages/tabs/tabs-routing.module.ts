@@ -18,26 +18,17 @@ const routes: Routes = [{
             path: 'homeJson',
             children: [{
                 path: '',
-                data: { json: true },
+                data: { json: false },
                 loadChildren: '../home/home.module#HomePageModule'
             }],
-            data: { json: true },
+            data: { json: false },
         },
       {
-        path: 'search',
+        path: 'videos',
         children: [{
           path: '',
           data: { json: true },
-          loadChildren: '../home/search.module#SearchPageModule'
-        }],
-        data: { json: true },
-      },
-      {
-        path: 'profil',
-        children: [{
-          path: '',
-          data: { json: true },
-          loadChildren: '../home/home.profil#ProfilPageModule'
+          loadChildren: '../videos/videos.module#VideosPageModule'
         }],
         data: { json: true },
       },

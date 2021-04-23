@@ -18,9 +18,10 @@ export class FeedsService {
 
     constructor(private http: HttpClient) {}
 
+
     getDataBJson(): Promise < ArticleFeed[] > {
         return new Promise((resolve, rejects) => {
-            this.http.request('POST', 'https://mycookbook-io1.p.rapidapi.com/recipes/rapidapi/x-rapidapi-key=58e02160a0msh27d712f99292383p1a2648jsnd30330a5b332').subscribe((items: any) => {
+            this.http.request('GET', 'https://www.jamieoliver.com/recipes/vegetables-recipes/superfood-salad/?uuid=ac9333c3-2cef-4fb0-becf-430c8a201482').subscribe((items: any) => {
                 items = items.articles;
                 console.log(items);
                 let articles: ArticleFeed[] = []
@@ -43,7 +44,7 @@ export class FeedsService {
 
     requestByUrlTrashTalk(): Promise < ArticleFeed[] > {
         return new Promise((resolve, rejects) => {
-            this.http.request('GET', 'https://mycookbook-io1.p.rapidapi.com/recipes/rapidapi/x-rapidapi-key=58e02160a0msh27d712f99292383p1a2648jsnd30330a5b332', { responseType: 'text' }).subscribe((data) => {
+            this.http.request('GET', 'http://www.unjourunerecette.fr/rss.xml', { responseType: 'text' }).subscribe((data) => {
                 try {
                     let articles: ArticleFeed[] = []
                     const object = JSON.parse(converter.xml2json(data, { compact: true, spaces: 2 }))
@@ -58,13 +59,14 @@ export class FeedsService {
                         return article
                     })
                     for (const item of items) {
-                      console.log(items);
+                      console.log(item.category);
 
                       articles.push({
-                            category: item.category,
-                            title: item.title._text,
+
+                        category: item.category,
+                            title: item.description._text,
                             subTitle: '',
-                            pubDate: item.pubDate._text,
+                            pubDate: item.pubDate,
                             description: item.description._cdata,
                             creator: item['dc:creator']._cdata
                         })

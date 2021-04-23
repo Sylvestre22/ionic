@@ -34,7 +34,7 @@ const routes: Routes = [{
   {
     path: 'videos',
     loadChildren: () =>
-      import ('./pages/Videos/videos.module').then(m => m.VideosPageModule)
+      import ('./pages/videos/videos.module').then(m => m.VideosPageModule)
   },
   {
     path: 'tabs',

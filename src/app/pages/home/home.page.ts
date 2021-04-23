@@ -26,7 +26,7 @@ export class HomePage implements OnInit {
         constructor(private router: Router, private route: ActivatedRoute, private feed: FeedsService) {}
 
         ionViewWillEnter() {
-        console.log("ionViewWillEnter");
+       // console.log("ionViewWillEnter");
 
         this.router.events.subscribe(async(event) => {
             if (event instanceof NavigationEnd) {

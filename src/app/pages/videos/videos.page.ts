@@ -7,13 +7,17 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./videos.page.scss'],
 })
 export class VideosPage  {
-
+  // ApiUrl = '';
+  // mdata= {
+  //   titre: '',
+  //   description: '',
+  //   imageUrl; ''
+  // };
 
   constructor(public http: HttpClient) {
-    this.readAPI ('https://mycookbook-io1.p.rapidapi.com/recipes/rapidapi/?apikey=58e02160a0msh27d712f99292383p1a2648jsnd30330a5b332')
+    this.readAPI ('https://www.jamieoliver.com/recipes/vegetables-recipes/superfood-salad/?uuid=ac9333c3-2cef-4fb0-becf-430c8a201482')
       .subscribe((data) => {
         console.log(data);
-
       });
 
   }
