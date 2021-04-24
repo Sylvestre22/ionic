@@ -6,6 +6,7 @@ const routes: Routes = [{
         redirectTo: 'tabs',
         pathMatch: 'full'
     },
+  //salut ayton
     {
         path: 'home',
         loadChildren: () =>
