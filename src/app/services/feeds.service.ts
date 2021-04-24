@@ -19,28 +19,28 @@ export class FeedsService {
     constructor(private http: HttpClient) {}
 
 
-    getDataBJson(): Promise < ArticleFeed[] > {
-        return new Promise((resolve, rejects) => {
-            this.http.request('GET', 'https://www.jamieoliver.com/recipes/vegetables-recipes/superfood-salad/?uuid=ac9333c3-2cef-4fb0-becf-430c8a201482').subscribe((items: any) => {
-                items = items.articles;
-                console.log(items);
-                let articles: ArticleFeed[] = []
-                for (const item of items) {
-                    articles.push({
-                        category: item.source.name,
-                        title: item.title,
-                        subTitle: '',
-                        pubDate: item.publishedAt,
-                        description: item.description,
-                        creator: item.author,
-                        media: item.urlToImage
-                    })
-                }
-                console.log(articles);
-                resolve(articles);
-            })
-        })
-    }
+    // getDataBJson(): Promise < ArticleFeed[] > {
+    //     return new Promise((resolve, rejects) => {
+    //         this.http.request('GET', 'https://www.jamieoliver.com/recipes/vegetables-recipes/superfood-salad/?uuid=ac9333c3-2cef-4fb0-becf-430c8a201482').subscribe((items: any) => {
+    //             items = items.articles;
+    //             console.log(items);
+    //             let articles: ArticleFeed[] = []
+    //             for (const item of items) {
+    //                 articles.push({
+    //                     category: item.source.name,
+    //                     title: item.title,
+    //                     subTitle: '',
+    //                     pubDate: item.publishedAt,
+    //                     description: item.description,
+    //                     creator: item.author,
+    //                     media: item.urlToImage
+    //                 })
+    //             }
+    //             console.log(articles);
+    //             resolve(articles);
+    //         })
+    //     })
+    // }
 
     requestByUrlTrashTalk(): Promise < ArticleFeed[] > {
         return new Promise((resolve, rejects) => {
@@ -62,13 +62,12 @@ export class FeedsService {
                       console.log(item.category);
 
                       articles.push({
-
-                        category: item.category,
-                            title: item.description._text,
-                            subTitle: '',
-                            pubDate: item.pubDate,
-                            description: item.description._cdata,
-                            creator: item['dc:creator']._cdata
+                            description: item.description._text,
+                            // enclosure: item.enclosure._attributes,
+                            guid: item.guid._text,
+                            link: item.link._text,
+                            pubDate: item.pubDate._text,
+                            title: item.title._text,
                         })
                     }
                     resolve(articles);

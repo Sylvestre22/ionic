@@ -28,11 +28,11 @@ export class HomePage implements OnInit {
         ionViewWillEnter() {
        // console.log("ionViewWillEnter");
 
-        this.router.events.subscribe(async(event) => {
-            if (event instanceof NavigationEnd) {
-                this.feeds = (this.route.snapshot.data.json) ? await this.feed.getDataBJson() : await this.feed.requestByUrlTrashTalk()
-            }
-        });
+        // this.router.events.subscribe(async(event) => {
+        //     if (event instanceof NavigationEnd) {
+        //         this.feeds = (this.route.snapshot.data.json) ? await this.feed.getDataBJson() : await this.feed.requestByUrlTrashTalk()
+        //     }
+        // });
 
     }
 
