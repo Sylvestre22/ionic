@@ -49,7 +49,7 @@ export class RegisterPage implements OnInit {
         this.auth.register(this.user).then(async(data) => {
             console.log(data);
             await this.loading.dismiss();
-            this.router.navigate(['/login']);
+            this.router.navigate(['./login']);
         }).catch(async(err) => {
             console.log(err);
             const toast = await this.toast.create({
