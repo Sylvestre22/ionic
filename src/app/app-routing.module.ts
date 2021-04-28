@@ -40,6 +40,11 @@ const routes: Routes = [{
     path: 'tabs',
     loadChildren: () => import('./pages/tabs/tabs.module').then( m => m.TabsPageModule)
   },
+  {
+    path: 'connexion-modal',
+    loadChildren: () => import('./connexion-modal/connexion-modal.module').then( m => m.ConnexionModalPageModule)
+  },
+
 ];
 
 @NgModule({

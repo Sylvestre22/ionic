@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 
 import { HttpClient } from '@angular/common/http';
 
+
 import * as converter from 'xml-js';
 import { ArticleFeed } from '../interfaces/article-feed';
 
@@ -15,11 +16,12 @@ export class FeedsService {
   //    'https://www.lemonde.fr/basket/rss_full.xml'
   // ]
 
+
   constructor(private http: HttpClient) {}
 
   getDataBJson(): Promise < ArticleFeed[] > {
     return new Promise((resolve, rejects) => {
-      this.http.request('GET', 'https://www.jamieoliver.com/recipes/vegetables-recipes/superfood-salad/?uuid=72b7087363msh4bb834253a3c4b8p153040jsnc1a96c8d3dc0').subscribe((items: any) => {
+      this.http.request('GET', 'https://recipe-book-c81b8.firebaseio.com/recipes.json').subscribe((items: any) => {
         items = items.articles;
         console.log(items);
         let articles: ArticleFeed[] = []

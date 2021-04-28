@@ -16,10 +16,15 @@
         </ion-row>
         <ion-row class="form">
             <ion-col size="12">
+              <ion-item [ngClass]="user.username.trim().length < 2 ? 'username' : 'username'">
+                <ion-label position="floating">Pseudo</ion-label>
+                <ion-input type="text" [(ngModel)]="user.username"></ion-input>
+              </ion-item>
                 <ion-item [ngClass]="user.first_name.trim().length < 2 ? 'errorEmail' : 'goodEmail'">
                     <ion-label position="floating">firstname</ion-label>
                     <ion-input type="text" [(ngModel)]="user.first_name"></ion-input>
                 </ion-item>
+
                 <ion-item [ngClass]="user.last_name.trim().length < 2 ? 'errorEmail' : 'goodEmail'">
                     <ion-label position="floating">lastname</ion-label>
                     <ion-input type="text" [(ngModel)]="user.last_name"></ion-input>
