@@ -23,13 +23,13 @@ export class AuthService {
 
     register(user: UserRegister) {
         return new Promise((resolve, rejects) => {
-            this.http.post(this.url + '/id=', user).subscribe((data: any) => {
+            this.http.post(this.url + '/', user).subscribe((data: any) => {
                 (!data.success) ? rejects(data.message): resolve(data);
             });
         });
     }
 
     getProfile() {
-        return this.http.get(this.url + '/profil');
+        return this.http.get(this.url + '/');
     }
 }

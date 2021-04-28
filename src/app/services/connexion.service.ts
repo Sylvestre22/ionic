@@ -10,7 +10,6 @@ export class ConnexionService {
 
 
 
-
   constructor(private http: HttpClient) {}
   register(con: Connexion) {
     return new Promise((resolve, rejects) => {
