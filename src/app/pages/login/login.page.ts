@@ -33,13 +33,18 @@ export class LoginPage implements OnInit {
     async ngOnInit() {
         let token;
         if (this.platform.is("desktop")) {
-            token = localStorage.getItem('token')
+          console.log(this.auth);
+
+          token = localStorage.getItem('token')
         } else {
             token = await this.storage.getItem('token')
         }
         console.log(token);
         if (token !== undefined && token !== null)
-            this.router.navigate(['/tabs'])
+          console.log(this.router);
+
+      this.router.navigate(['/tabs'])
+
     }
 
     async forgotPassword() {

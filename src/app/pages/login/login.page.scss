@@ -1,7 +1,27 @@
+ion-header{
+  background-color: #f39531;
 .logo {
     height: 40%;
 }
+.titre{
+  padding-bottom: 20%;
 
+  h3{
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+  }
+  p{
+    margin: 0 auto;
+    font-size: 10px;
+    color: white !important;
+  }
+}
+  .register{
+    color:black;
+  }
+
+}
 .form {
     .btnLogin {
         --background: linear-gradient(to right, #ffab00, #ff8921, #ff653a, #fd404f, #eb1264);

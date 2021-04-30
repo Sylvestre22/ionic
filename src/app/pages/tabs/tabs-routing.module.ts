@@ -18,11 +18,20 @@ const routes: Routes = [{
             path: 'homeJson',
             children: [{
                 path: '',
-                data: { json: true },
+                data: { json: false },
                 loadChildren: '../home/home.module#HomePageModule'
             }],
-            data: { json: true },
+            data: { json: false },
         },
+      {
+        path: 'videos',
+        children: [{
+          path: '',
+          data: { json: true },
+          loadChildren: '../videos/videos.module#VideosPageModule'
+        }],
+        data: { json: true },
+      },
         {
             path: '',
             redirectTo: '/tabs/home',

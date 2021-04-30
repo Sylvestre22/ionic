@@ -1,0 +1,19 @@
+<ion-header class="header">
+  <ion-row class="logo-mini">
+    <ion-col size="12" class="ion-align-self-end">
+      <img src="/assets/icon/mini-logo.svg" alt="">
+    </ion-col>
+  </ion-row>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card *ngFor="let feed of feeds">
+    <img src="{{feed.enclosure}}">
+    <ion-card-header>
+      <ion-card-subtitle>{{ feed.pubDate }}</ion-card-subtitle>
+      <ion-card-title>{{ feed.title }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content [innerHTML]="feed.description">
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -1,11 +1,18 @@
 <ion-content>
-
+<ion-header class="heder">
     <ion-row class="logo">
         <ion-col size="12" class="ion-align-self-center">
-            <img src="assets/img/logo.jpg" alt="">
+            <img src="assets/img/CookingFeverLogo.png" alt="">
         </ion-col>
     </ion-row>
-    <ion-row class="form">
+  <ion-row class="titre">
+    <ion-col size="12" class="ion-align-self-center">
+        <h3>Bonjour</h3>
+        <p >Nos recettes pour cuisiner les plantes sauvages</p>
+    </ion-col>
+  </ion-row>
+</ion-header>
+  <ion-row class="form">
         <ion-col size="12">
             <ion-item [ngClass]="isErrorMail ? 'errorEmail' : 'goodEmail'">
                 <ion-label position="floating">Email</ion-label>
@@ -29,5 +36,5 @@
             </ion-button>
         </ion-col>
     </ion-row>
-    <p> <a routerLink="/register">You don't have any account ? Register</a> </p>
+    <p class="register"> <a routerLink="/register">You don't have any account ? Register</a> </p>
 </ion-content>

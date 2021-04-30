@@ -1,6 +1,5 @@
 #container {
   text-align: center;
-
   position: absolute;
   left: 0;
   right: 0;
@@ -24,4 +23,18 @@
 
 #container a {
   text-decoration: none;
+}
+
+.header{
+  background-color: orange;
+}
+
+.title{
+  text-align: center;
+  color: orange;
+  font-family: cursive;
+}
+.p{
+  text-align: center;
+  color: #F0F0F0;
 }

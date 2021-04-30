@@ -1,9 +1,7 @@
 export interface ArticleFeed {
-    category: string[];
-    title: string;
-    subTitle: string;
-    pubDate: string;
-    description: string;
-    media ? : string;
-    creator ? : string;
+  title: string;
+  description: string;
+  pubDate: string;
+  enclosure: string;
+  link: string;
 }

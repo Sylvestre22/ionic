@@ -11,11 +11,12 @@ import { Camera } from '@ionic-native/camera/ngx';
 import { NativeStorage } from '@ionic-native/native-storage/ngx';
 
 import { HttpClientModule } from '@angular/common/http';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
     declarations: [AppComponent],
     entryComponents: [],
-    imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule],
+    imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, HttpClientModule, FormsModule],
     providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }, NativeStorage, Camera],
     bootstrap: [AppComponent],
 })

@@ -7,14 +7,23 @@ import { IonicModule } from '@ionic/angular';
 import { ProfilPageRoutingModule } from './profil-routing.module';
 
 import { ProfilPage } from './profil.page';
+import {RouterModule} from "@angular/router";
+import {HomePage} from "../home/home.page";
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ProfilPageRoutingModule
+   ProfilPageRoutingModule
+    // RouterModule.forChild([
+    //   {
+    //     path: '',
+    //     component:ProfilPage
+    //   }
+    // ])
   ],
   declarations: [ProfilPage]
 })
 export class ProfilPageModule {}
+//
