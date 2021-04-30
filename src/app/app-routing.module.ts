@@ -38,18 +38,13 @@ const routes: Routes = [{
 },
 {
     path: 'tabs',
-<<<<<<< HEAD
     loadChildren: () => import('./pages/tabs/tabs.module').then(m => m.TabsPageModule)
 },
-=======
-    loadChildren: () => import('./pages/tabs/tabs.module').then( m => m.TabsPageModule)
-  },
-  {
+{
     path: 'connexion-modal',
-    loadChildren: () => import('./connexion-modal/connexion-modal.module').then( m => m.ConnexionModalPageModule)
-  },
+    loadChildren: () => import('./connexion-modal/connexion-modal.module').then(m => m.ConnexionModalPageModule)
+},
 
->>>>>>> 6e8c050cf06387208873e57d75a0333f078d7f6c
 ];
 
 @NgModule({
