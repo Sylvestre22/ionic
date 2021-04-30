@@ -1,11 +1,17 @@
 <ion-content [fullscreen]="true">
     <ion-card *ngFor="let feed of feeds">
-        <img [src]="(feed.media === undefined)?randomPicture():feed.media" />
         <ion-card-header>
-            <ion-card-subtitle>{{ feed.creator }}</ion-card-subtitle>
-            <ion-card-title>{{ feed.title }}</ion-card-title>
+
+            <ion-card-title class="title"><u>{{ feed.title }}</u></ion-card-title><br>
+            <!-- <ion-card-subtitle>{{ feed.pubDate }}</ion-card-subtitle> -->
+            <img src="{{feed.enclosure}}">
+
         </ion-card-header>
-        <ion-card-content [innerHTML]="feed.description">
+        <ion-card-content style="text-align: center;" [innerHTML]="feed.description" Pour la recette cliquez juste ici>
+
         </ion-card-content>
+        <h4 class="p">
+            <ion-icon name="arrow-up-outline"></ion-icon><br>Pour voir la recette cliquez sur le lien au dessus
+        </h4>
     </ion-card>
 </ion-content>
