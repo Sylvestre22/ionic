@@ -26,3 +26,4 @@ import {HomePage} from "../home/home.page";
   declarations: [ProfilPage]
 })
 export class ProfilPageModule {}
+//
