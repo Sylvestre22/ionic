@@ -5,5 +5,17 @@
 </ion-header>
 
 <ion-content>
+  <ion-list>
+    <ion-item *ngFor="let connexion of connexions">
+      <ion-avatar>
+        <div class="avatar">{{connexion.avatar.substring(0,1).toUpperCase()}}</div>
+      </ion-avatar>
+      <ion-label>
+        <h2 class="jasmine-title">{{connexion.username}}</h2>
+        <p class="subtext">{{'Form'+ connexion.last_name +' Tel :'+connexion.phone}}</p>
+      </ion-label>
+    </ion-item>
+
+  </ion-list>
 
 </ion-content>

@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 
 import { HttpClient } from '@angular/common/http';
 
+
 import * as converter from 'xml-js';
 import { ArticleFeed } from '../interfaces/article-feed';
 import { VideosFeed } from '../interfaces/videos-feed';
@@ -13,10 +14,23 @@ export class FeedsService {
 
   constructor(private http: HttpClient) { }
 
+<<<<<<< HEAD
+=======
+
+  constructor(private http: HttpClient) {}
+>>>>>>> 6e8c050cf06387208873e57d75a0333f078d7f6c
 
   requestByUrlTrashTalk(): Promise<ArticleFeed[]> {
     return new Promise((resolve, rejects) => {
+<<<<<<< HEAD
       this.http.request('GET', 'http://www.unjourunerecette.fr/rss.xml', { responseType: 'text' }).subscribe((data) => {
+=======
+      this.http.request('GET', 'https://recipe-book-c81b8.firebaseio.com/recipes.json').subscribe((items: any) => {
+        items = items.articles;
+        console.log(items);
+        let articles: ArticleFeed[] = []
+        console.log(articles);
+>>>>>>> 6e8c050cf06387208873e57d75a0333f078d7f6c
 
         try {
           let articles: ArticleFeed[] = []

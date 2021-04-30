@@ -9,13 +9,13 @@ import { UserRegister } from '../interfaces/user-register';
 })
 export class AuthService {
 
-    url: string = 'https://exoticafrica.fr/app.php/'; // aaaaaaa@aaaaaaa.fr
+    url: string = 'https://exoticafrica.fr/app.php'; // aaaaaaa@aaaaaaa.fr
 
     constructor(private http: HttpClient) {}
 
     login(email: string, password: string) {
         return new Promise((resolve, rejects) => {
-            this.http.post(this.url + 'id', { email: email, password: password }).subscribe((data: any) => {
+            this.http.post(this.url + '/?id=', { email: email, password: password }).subscribe((data: any) => {
                 (!data.success) ? rejects(false): resolve(data);
             });
         });
@@ -23,13 +23,13 @@ export class AuthService {
 
     register(user: UserRegister) {
         return new Promise((resolve, rejects) => {
-            this.http.post(this.url + 'id', user).subscribe((data: any) => {
+            this.http.post(this.url + '/id=', user).subscribe((data: any) => {
                 (!data.success) ? rejects(data.message): resolve(data);
             });
         });
     }
 
     getProfile() {
-        return this.http.get(this.url + 'id');
+        return this.http.get(this.url + '/profil');
     }
 }

@@ -1,4 +1,7 @@
+
+import {ConnexionService } from "../../services/connexion.service";
 import { Component, OnInit } from '@angular/core';
+import { Connexion } from '../../interfaces/connexion-register';
 
 @Component({
   selector: 'app-profil',
@@ -6,10 +9,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profil.page.scss'],
 })
 export class ProfilPage implements OnInit {
-
-  constructor() { }
+connexions: [Connexion];
+  constructor(private  service: ConnexionService) { }
 
   ngOnInit() {
+    this.service.getAll().subscribe(response =>{
+      this.connexions = response;
+    });
   }
 
 }

@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET'){
       if(isset($_GET['id'])){
               $id = $conn->real_escape_string($_GET['id']);
               $sql = $conn->query("SELECT * FROM connexion WHERE id = $id");
-              $data = $sql->fatch_assoc();
+              $data = $sql->fetch_assoc();
       }else {
               # code...
               $data = array();
