@@ -4,67 +4,33 @@ import { HttpClient } from '@angular/common/http';
 
 import * as converter from 'xml-js';
 import { ArticleFeed } from '../interfaces/article-feed';
+import { VideosFeed } from '../interfaces/videos-feed';
 
 @Injectable({
   providedIn: 'root'
 })
 export class FeedsService {
 
-  // url: string[] = [
-  //   'https://trashtalk.co/feed/',
-  //    'https://www.lemonde.fr/basket/rss_full.xml'
-  // ]
+  constructor(private http: HttpClient) { }
 
-  constructor(private http: HttpClient) {}
 
-  getDataBJson(): Promise < ArticleFeed[] > {
-    return new Promise((resolve, rejects) => {
-      this.http.request('GET', 'https://www.jamieoliver.com/recipes/vegetables-recipes/superfood-salad/?uuid=72b7087363msh4bb834253a3c4b8p153040jsnc1a96c8d3dc0').subscribe((items: any) => {
-        items = items.articles;
-        console.log(items);
-        let articles: ArticleFeed[] = []
-        console.log(articles);
-
-        for (const item of items) {
-          articles.push({
-            category: item.source.name,
-            title: item.title,
-            subTitle: '',
-            pubDate: item.publishedAt,
-            description: item.description,
-            creator: item.author,
-            media: item.urlToImage
-          })
-        }
-        console.log(articles);
-        resolve(articles);
-      })
-    })
-  }
-
-  requestByUrlTrashTalk(): Promise < ArticleFeed[] > {
+  requestByUrlTrashTalk(): Promise<ArticleFeed[]> {
     return new Promise((resolve, rejects) => {
       this.http.request('GET', 'http://www.unjourunerecette.fr/rss.xml', { responseType: 'text' }).subscribe((data) => {
+
         try {
           let articles: ArticleFeed[] = []
           const object = JSON.parse(converter.xml2json(data, { compact: true, spaces: 2 }))
           const items = object.rss.channel.item
           items.map((article) => {
-            let test = article.category.map((categ) => {
-              categ = categ._cdata
-              return categ;
-            })
-            article.category = test
-            return article
           })
           for (const item of items) {
             articles.push({
-              category: item.category,
               title: item.title._text,
-              subTitle: '',
-              pubDate: item.pubDate._text,
               description: item.description._cdata,
-              creator: item['dc:creator']._cdata
+              pubDate: item.pubDate._text,
+              enclosure: item.enclosure._attributes.url,
+              link: item.link._text,
             })
           }
           resolve(articles);
@@ -74,4 +40,37 @@ export class FeedsService {
       });
     });
   }
+
+  requestByUrl(): Promise<VideosFeed[]> {
+    return new Promise((resolve, rejects) => {
+      this.http.request('GET', 'http://www.unjourunerecette.fr/rss.xml', { responseType: 'text' }).subscribe((data) => {
+
+        try {
+          let articles: VideosFeed[] = []
+          const object = JSON.parse(converter.xml2json(data, { compact: true, spaces: 2 }))
+          const items = object.rss.channel.item
+          items.map((article) => {
+          })
+          for (const item of items) {
+            articles.push({
+              title: item.title._text,
+              description: item.description._cdata,
+              pubDate: item.pubDate._text,
+              enclosure: item.enclosure._attributes.url,
+              link: item.link._text,
+            })
+          }
+          resolve(articles);
+        } catch (err) {
+          rejects(false)
+        }
+      });
+    });
+  }
+
+
+
+
+
+
 }

@@ -1,31 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { FeedsService } from 'src/app/services/feeds.service';
+import { ActivatedRoute, Router } from '@angular/router';
+import { VideosFeed } from 'src/app/interfaces/videos-feed';
 
 @Component({
   selector: 'app-videos',
   templateUrl: './videos.page.html',
   styleUrls: ['./videos.page.scss'],
 })
-export class VideosPage  {
-  // ApiUrl = '';
-  // mdata= {
-  //   titre: '',
-  //   description: '',
-  //   imageUrl; ''
-  // };
+export class VideosPage {
+  feeds: VideosFeed[];
+  constructor(private router: Router, private route: ActivatedRoute, private feed: FeedsService) { }
 
-  constructor(public http: HttpClient) {
-
-   // this.readAPI ('https://www.jamieoliver.com/recipes/vegetables-recipes/superfood-salad/?uuid=ac9333c3-2cef-4fb0-becf-430c8a201482')
-   //    .subscribe((data) => {
-   //      console.log(data);
-   //    });
-
+  async ngOnInit() {
+    this.feeds = await this.feed.requestByUrl()
   }
-
-  // readAPI(URL: string) {
-  //   return  this.http.get(URL);
-  // }
-
 
 }
