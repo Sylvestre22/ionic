@@ -28,7 +28,7 @@
     "cordova-plugin-camera": "^5.0.1",
     "cordova-plugin-nativestorage": "^2.3.2",
     "rxjs": "~6.6.0",
-    "tslib": "^2.0.0",
+    "tslib": "^2.6.1",
     "xml-js": "^1.6.11",
     "zone.js": "~0.10.2"
   },
